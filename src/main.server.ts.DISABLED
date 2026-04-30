@@ -1,0 +1,9 @@
+import { bootstrapApplication } from '@angular/platform-browser'; // IMPORTANTE: platform-browser
+import { AppComponent } from './app/app.component';
+import { config } from './app/app.config.server';
+
+// No ejecutes la función, solo defínela
+const bootstrap = () => bootstrapApplication(AppComponent, config);
+
+// La exportación por defecto es OBLIGATORIA para que AngularNodeAppEngine funcione
+export default bootstrap;
